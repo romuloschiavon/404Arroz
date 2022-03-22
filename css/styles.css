@@ -23,8 +23,17 @@ body{
     padding-bottom: 15%;
 }
 
-.container#Second{
-    background-color: #68534D;
+.container#Segunda{
+    padding: 0;
+    background-color: #469b7e;
+}
+
+.container#divisor{
+    padding:0;
+    margin:0;
+    height: 150px; 
+    overflow: hidden; 
+    background-color:#469b7e;
 }
 
 div.left{
@@ -34,6 +43,7 @@ div.left{
     align-self: left;
     align-items: left;
     padding-right: 2.5%;
+    text-align: left;
 }
 
 div.right{
@@ -42,6 +52,10 @@ div.right{
     align-items: right;
     text-align: center;
     padding-left: 2.5%;
+}
+
+div.botoes{
+    height: 5rem;
 }
 
 .video-principal{
@@ -61,8 +75,7 @@ h1.divTitle{
     font-family: 'Offside';
     font-size: 6rem;
     font-weight: 800;
-    color: #357560;
-    margin-top: -5%;
+    color: #fff;
 }
 
 p.description{
@@ -96,11 +109,12 @@ button.btn{
     border-radius: 10px;
     margin-top: 5%;
     transition: 250ms;
+    -ms-transition: 250ms;
+    -webkit-transition: 250ms;
 }
 
 button.btn#secundario{
     background-color: #81726A;
-    color: #f1f1f1;
 }
 
 button.btn:hover{
@@ -109,6 +123,7 @@ button.btn:hover{
     height: 5rem;
     font-size: 2.3rem;
     background-color: #357560;
+    color: #fff;
 }
 
 button.btn#secundario:hover{

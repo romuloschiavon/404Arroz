@@ -16,12 +16,14 @@
 
 <!-- asdasdasdd -->
     <body>
-        <div class="container" id="First">
+        <div class="container" id="Primeira">
             <div class="left">
                 <h1 class="title">404!</h1>
-                <p class="description">Conscientizando e solucionando o mal uso da água no plantio de arroz.</p>
-                <button class="btn" id="primario" onclick="window.location.href='#primario'">Projeto</button>
-                <button class="btn" id="secundario" onclick="window.location.href='#secundario'">Idealizadores</button>
+                <p class="description">Projeto que conscientiza e soluciona o mal uso de água nas plantações de arroz no sul de Santa Catarina.</p>
+                <div class="botoes">
+                    <button class="btn" id="primario" onclick="window.location.href='#sobre'">Projeto</button>
+                    <button class="btn" id="secundario" onclick="window.location.href='#grupo'">Idealizadores</button>
+                </div>
             </div>
             <div class="right">
                 <video class="video-principal" autoplay muted="true" controls>
@@ -30,15 +32,16 @@
                 <p class="description" id="Video">Recomendamos colocar o video em tela cheia para velhor visualização do conteúdo abordado!</p>
             </div>
         </div>
-        <div class="container" id="Second">
-            <button class="btn" onclick="window.location.href='index.html'">Voltar</button>
+        <!-- Divisor retirado de: https://smooth.ie/blogs/news/svg-wavey-transitions-between-sections -->
+        <div class="container" id="divisor">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M-7.62,91.30 C149.99,150.00 271.49,-49.98 499.72,86.36 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #f4fec1;"></path>
+            </svg>
         </div>
 
-    </body> 
+        <div class="container" id="Segunda">
+            <h1 class="divTitle" id="sobre">Sobre</h1>
+        </div>
 
-<!-- Jquery, Popper e BootStrap -->
-
-
-<!-- Outros Scripts-->
-
+    </body>
 </html>
