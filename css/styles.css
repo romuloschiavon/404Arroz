@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Offside&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Offside&family=Poppins&display=swap');
+
+html {
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin:0;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4fec1;
+    padding-top: 10%;
+    padding-bottom: 15%;
+}
+
+.container#Second{
+    background-color: #68534D;
+}
+
+div.left{
+    width: 30%;
+    height: 100%;
+    align-content: left;
+    align-self: left;
+    align-items: left;
+    padding-right: 2.5%;
+}
+
+div.right{
+    width: 50%;
+    height: 100%;
+    align-items: right;
+    text-align: center;
+    padding-left: 2.5%;
+}
+
+.video-principal{
+    width: 100%;
+    height: 100%;
+}
+
+h1.title {
+    font-family: 'Offside';
+    font-size: 8rem;
+    font-weight: 800;
+    color: #68534D;
+    margin: 0;
+}
+
+h1.divTitle{
+    font-family: 'Offside';
+    font-size: 6rem;
+    font-weight: 800;
+    color: #357560;
+    margin-top: -5%;
+}
+
+p.description{
+    font-family: 'Poppins';
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #81726A;
+}
+
+p.description#Video{
+    font-family: 'Poppins';
+    font-size: 1rem;
+    font-weight: 200;
+    color: #68534D;
+}
+
+img.logo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+button.btn{
+    width: 40%;
+    height: 4rem;
+    font: 'Poppins';
+    font-size: 1.8rem;
+    background-color: #469b7e;
+    color: #fdfdfd;
+    border: none;
+    border-radius: 10px;
+    margin-top: 5%;
+    transition: 250ms;
+}
+
+button.btn#secundario{
+    background-color: #81726A;
+    color: #f1f1f1;
+}
+
+button.btn:hover{
+    cursor: pointer;
+    width: 50%;
+    height: 5rem;
+    font-size: 2.3rem;
+    background-color: #357560;
+}
+
+button.btn#secundario:hover{
+    background-color: #68534D;
+}
