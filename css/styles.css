@@ -9,7 +9,9 @@ html {
 
 body{
     margin:0;
+    background-color: #469b7e;
 }
+
 
 .container {
     width: 100%;
@@ -19,31 +21,42 @@ body{
     justify-content: center;
     align-items: center;
     background-color: #f4fec1;
-    padding-top: 10%;
-    padding-bottom: 15%;
+    padding-top: 10vh;
+    padding-bottom: 15vh;
 }
 
 .container#Segunda{
+    flex-direction: column;
     padding: 0;
+    padding-top: 1vh;
     background-color: #469b7e;
 }
 
 .container#divisor{
-    padding:0;
-    margin:0;
-    height: 150px; 
+    padding: 0;
+    margin: 0;
+    height: 15vh; 
     overflow: hidden; 
     background-color:#469b7e;
+}
+
+div.logo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 div.left{
     width: 30%;
     height: 100%;
-    align-content: left;
-    align-self: left;
-    align-items: left;
-    padding-right: 2.5%;
+    align-content: center;
+    align-self: center;
+    align-items: center;
     text-align: left;
+    padding-right: 2.5%;
 }
 
 div.right{
@@ -55,7 +68,12 @@ div.right{
 }
 
 div.botoes{
-    height: 5rem;
+    margin: 0;
+    padding: 0;
+    height: 4vh;
+    width: 100%;
+    display: flex;
+    justify-content: right;
 }
 
 .video-principal{
@@ -63,9 +81,15 @@ div.botoes{
     height: 100%;
 }
 
+.arrozito{
+    width: 40%;
+    height: 40%;
+    padding-left: 2vw;
+}
+
 h1.title {
     font-family: 'Offside';
-    font-size: 8rem;
+    font-size: 7vw;
     font-weight: 800;
     color: #68534D;
     margin: 0;
@@ -73,21 +97,24 @@ h1.title {
 
 h1.divTitle{
     font-family: 'Offside';
-    font-size: 6rem;
+    font-size: 4vw;
     font-weight: 800;
-    color: #fff;
+    color: #fdfdfd;
+    padding: 0;
 }
 
-p.description{
+p{
     font-family: 'Poppins';
-    font-size: 1.5rem;
+    font-size: 1.3vw;
     font-weight: 400;
     color: #81726A;
+    margin: 0;
+    padding: 0.3vh;
 }
 
 p.description#Video{
     font-family: 'Poppins';
-    font-size: 1rem;
+    font-size: 0.9vw;
     font-weight: 200;
     color: #68534D;
 }
@@ -100,14 +127,16 @@ img.logo{
 
 button.btn{
     width: 40%;
-    height: 4rem;
+    height: 6vh;
     font: 'Poppins';
-    font-size: 1.8rem;
+    font-size: 1.4vw;
     background-color: #469b7e;
     color: #fdfdfd;
     border: none;
-    border-radius: 10px;
+    border-radius: 6px;
     margin-top: 5%;
+    margin-left: 1%;
+    margin-right: 1%;
     transition: 250ms;
     -ms-transition: 250ms;
     -webkit-transition: 250ms;
@@ -120,12 +149,141 @@ button.btn#secundario{
 button.btn:hover{
     cursor: pointer;
     width: 50%;
-    height: 5rem;
-    font-size: 2.3rem;
+    height: 8vh;
+    font-size: 2vw;
     background-color: #357560;
     color: #fff;
 }
 
 button.btn#secundario:hover{
     background-color: #68534D;
+}
+
+p.texto-padrao{
+    color: #fdfdfd;
+}
+
+div.linhas{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: left;
+    align-items: center;
+}
+
+div.coluna{
+    display: flex;
+    flex-direction: column;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+img.arrozitoDivLogo{
+    padding-left: 3vw;
+    width: 10vw;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+    div.container{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        background-color: #f4fec1;
+    }
+    
+    div.container#Primeira{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    div.container#Segunda{
+        padding: 0;
+        background-color: #469b7e;
+    }
+
+    div.container#divisor{
+        height: auto; 
+        overflow: hidden; 
+        background-color:#469b7e;
+    }
+
+    div.left{
+        height: 100%;
+        width: 90%;
+        flex: 1;
+        padding-top: 10vh;
+        padding-bottom: 3vh;
+    }
+
+    div.right{
+        height: 100%;
+        width: 90%;
+        flex: 2;
+        margin-bottom: 0;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+    }
+
+    div.logo{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    div.botoes{
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1.title{
+        font-size: 25vw;
+    }
+
+    p{
+        font-size: 3vw;
+    }
+
+    p.description{
+        text-align: center;
+        text-justify: inter-word;
+    }
+
+    p.description#Video{
+        font-size: 2.5vw;
+    }
+
+    button.btn{
+        width: 70%;
+        height: 6vh;
+        font-size: 4vw;
+        padding: 0;
+    }
+
+    button.btn:hover{
+        width: 90%;
+        height: 8vh;
+        font-size: 6vw;
+    }
+
+    h1.divTitle{
+        font-size: 8vw;
+    }
+
+    div.linhas#conteudo{
+        display: flex;
+        flex-direction: column;
+    }
+
+    img.arrozitoDivLogo{
+        width: 30vw;
+    }
 }
