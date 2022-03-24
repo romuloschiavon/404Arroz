@@ -32,6 +32,13 @@ body{
     background-color: #469b7e;
 }
 
+.container#Terceira{
+    flex-direction: column;
+    padding: 0;
+    padding-top: 1vh;
+    background-color: #f4fec1;
+}
+
 .container#divisor{
     padding: 0;
     margin: 0;
@@ -99,8 +106,20 @@ h1.divTitle{
     font-family: 'Offside';
     font-size: 4vw;
     font-weight: 800;
-    color: #fdfdfd;
+    color: #fff;
     padding: 0;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+h1.divTitle-dark{
+    font-family: 'Offside';
+    font-size: 4vw;
+    font-weight: 800;
+    color: #68534D;
+    padding: 0;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
 }
 
 p{
@@ -128,10 +147,10 @@ img.logo{
 button.btn{
     width: 40%;
     height: 6vh;
-    font: 'Poppins';
-    font-size: 1.4vw;
+    font-family: 'Poppins';
+    font-size: 1.2vw;
     background-color: #469b7e;
-    color: #fdfdfd;
+    color: #f1f1f1;
     border: none;
     border-radius: 6px;
     margin-top: 5%;
@@ -150,7 +169,7 @@ button.btn:hover{
     cursor: pointer;
     width: 50%;
     height: 8vh;
-    font-size: 2vw;
+    font-size: 1.7vw;
     background-color: #357560;
     color: #fff;
 }
@@ -160,29 +179,81 @@ button.btn#secundario:hover{
 }
 
 p.texto-padrao{
-    color: #fdfdfd;
+    font-size: 1.2vw;
+    text-align: center;
+    text-justify: distribute-all-lines;
+    color: #f1f1f1;
+    padding-bottom: 3vh;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+}
+
+p.texto-padrao > strong{
+    font-size: 1.5vw;
+    font-weight: 800;
+}
+
+p.texto-padrao-dark{
+    font-size: 1.2vw;
+    text-align: center;
+    text-justify: distribute-all-lines;
+    color: #81726A;
+    padding-bottom: 3vh;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+}
+
+p.texto-padrao-dark > strong{
+    font-size: 1.5vw;
+    font-weight: 800;
+}
+
+div.coluna{
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 6vh;
 }
 
 div.linhas{
     display: flex;
     flex-direction: row;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+div.linhas#titulo{
     width: 90%;
     justify-content: left;
     align-items: center;
 }
 
-div.coluna{
-    display: flex;
-    flex-direction: column;
-    padding-left: 2vw;
-    padding-right: 2vw;
+div.linhas#titulo-dark{
+    width: 90%;
+    justify-content: right;
+    align-items: center;
 }
 
 img.arrozitoDivLogo{
     padding-left: 3vw;
+    padding-right: 3vw;
     width: 10vw;
     height: 100%;
     object-fit: cover;
+}
+
+img.arrozitoTriste{
+    padding: 1%;
+    width: 20vw;
+    height: 100%;
+    object-fit: cover;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -204,6 +275,11 @@ img.arrozitoDivLogo{
     div.container#Segunda{
         padding: 0;
         background-color: #469b7e;
+    }
+
+    div.container#Terceira{
+        padding: 0;
+        background-color: #f4fec1;
     }
 
     div.container#divisor{
