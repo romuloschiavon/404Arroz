@@ -260,6 +260,15 @@ p.texto-padrao-dark > strong{
     font-weight: 800;
 }
 
+a.btn-a{
+    height: auto;
+    width: 100%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 div.coluna{
     height: 100%;
     width: 90%;
