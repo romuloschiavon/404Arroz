@@ -1,6 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Offside&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Offside&family=Poppins&display=swap');
 
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f4fec1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #81726A;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #68534D;
+  }
+
 html {
     width: 100%;
     height: 100%;
@@ -165,10 +185,15 @@ button.btn#secundario{
     background-color: #81726A;
 }
 
+button.btn#links{   
+    margin: 0;
+    background-color: #81726A;
+}
+
 button.btn:hover{
     cursor: pointer;
     width: 50%;
-    height: 8vh;
+    height: 7vh;
     font-size: 1.7vw;
     background-color: #357560;
     color: #fff;
@@ -178,12 +203,15 @@ button.btn#secundario:hover{
     background-color: #68534D;
 }
 
+button.btn#links:hover{
+    background-color: #68534D;
+}
+
 p.texto-padrao{
     font-size: 1.2vw;
     text-align: center;
     text-justify: distribute-all-lines;
     color: #f1f1f1;
-    padding-bottom: 3vh;
     margin-left: 2.5vw;
     margin-right: 2.5vw;
 }
@@ -225,6 +253,11 @@ div.linhas{
     height: 100%;
     align-items: center;
     justify-content: center;
+    padding-bottom: 6vh;
+}
+
+div.linhas#prearrozito{
+    padding: 0;
 }
 
 div.linhas#titulo{
@@ -239,6 +272,16 @@ div.linhas#titulo-dark{
     align-items: center;
 }
 
+div.coluna#arrozito{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
 img.arrozitoDivLogo{
     padding-left: 3vw;
     padding-right: 3vw;
@@ -250,6 +293,15 @@ img.arrozitoDivLogo{
 img.arrozitoTriste{
     padding: 1%;
     width: 20vw;
+    height: 100%;
+    object-fit: cover;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+img.arrozitoTomandoCafe{
+    padding: 1%;
+    width: 15vw;
     height: 100%;
     object-fit: cover;
     padding-top: 0;
@@ -274,11 +326,13 @@ img.arrozitoTriste{
 
     div.container#Segunda{
         padding: 0;
+        flex-direction: column;
         background-color: #469b7e;
     }
 
     div.container#Terceira{
         padding: 0;
+        flex-direction: column;
         background-color: #f4fec1;
     }
 
@@ -286,6 +340,25 @@ img.arrozitoTriste{
         height: auto; 
         overflow: hidden; 
         background-color:#469b7e;
+    }
+
+    div.coluna#conteudo > .linhas{
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+    }
+
+    p.texto-padrao{
+        font-size: 2.4vw;
+    }
+
+    p.texto-padrao > strong{
+        font-size: 3vw;
+    }
+
+    img.arrozitoTriste{
+        width: 0;
+        height: 0;
     }
 
     div.left{
@@ -351,6 +424,10 @@ img.arrozitoTriste{
     }
 
     h1.divTitle{
+        font-size: 8vw;
+    }
+
+    h1.divTitle-dark{
         font-size: 8vw;
     }
 
