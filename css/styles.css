@@ -59,12 +59,36 @@ body{
     background-color: #f4fec1;
 }
 
+.container#Terceira{
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    padding-top: 1vh;
+    background-color: #f4fec1;
+}
+
+.container#Quarta{
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    padding-top: 3vh;
+    background-color: #68534D;
+}
+
 .container#divisor{
     padding: 0;
     margin: 0;
     height: 15vh; 
     overflow: hidden; 
     background-color:#469b7e;
+}
+
+.container#divisor2{
+    padding: 0;
+    margin: 0;
+    height: 15vh; 
+    overflow: hidden; 
+    background-color:#f4fec1;
 }
 
 div.logo{
@@ -439,4 +463,21 @@ img.arrozitoTomandoCafe{
     img.arrozitoDivLogo{
         width: 30vw;
     }
+}
+
+hr {
+    border: none;
+    padding: 0;
+    margin: 0;
+    border-top: 0.7vh dashed #68534D;
+    background-color: #f4fec1;
+    width:100%;
+    overflow: visible;
+    padding-bottom: 0.5vh;
+}
+
+hr.inverso{
+    border-top: 0;
+    padding-top: 0.5vh;
+    border-bottom: 0.7vh dashed #68534D;
 }
