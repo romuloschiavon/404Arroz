@@ -420,6 +420,11 @@ div.pessoa{
         background-color: #f4fec1;
     }
 
+    div.container#Quarta{
+        padding: 0;
+        flex-direction: column;
+    }
+
     div.container#divisor{
         height: auto; 
         overflow: hidden; 
@@ -437,6 +442,14 @@ div.pessoa{
     }
 
     p.texto-padrao > strong{
+        font-size: 3vw;
+    }
+
+    p.texto-padrao-dark{
+        font-size: 2.4vw;
+    }
+
+    p.texto-padrao-dark > strong{
         font-size: 3vw;
     }
 
@@ -527,6 +540,11 @@ div.pessoa{
 
     img.arrozitoDivLogo{
         width: 30vw;
+    }
+
+    img.foto-membro{
+        width: 15vw;
+        height: 15vw;
     }
 }
 
